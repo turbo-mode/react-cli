@@ -36,21 +36,16 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 import { program } from 'commander';
-import { generateComponentCommand } from 'src/commands';
+// import { generateComponentCommand } from 'src/commands';
 import pkg from '../package.json';
-import { getCliConfigFile } from './utils';
+// import { getCliConfigFile } from './utils';
 var exec = function (argv) { return __awaiter(void 0, void 0, void 0, function () {
-    var cliConfigFile;
     return __generator(this, function (_a) {
-        switch (_a.label) {
-            case 0: return [4 /*yield*/, getCliConfigFile()];
-            case 1:
-                cliConfigFile = _a.sent();
-                generateComponentCommand(argv, cliConfigFile, program);
-                program.version(pkg.version);
-                program.parse(argv);
-                return [2 /*return*/];
-        }
+        // const cliConfigFile = await getCliConfigFile();
+        // generateComponentCommand(argv, cliConfigFile, program);
+        program.version(pkg.version);
+        program.parse(argv);
+        return [2 /*return*/];
     });
 }); };
 console.log('hello world');
