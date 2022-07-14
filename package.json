@@ -6,9 +6,8 @@
   "main": "bin/index.js",
   "bin": "bin/index.js",
   "files": [
-    "bin/",
-    "src/",
-    "dist/"
+    "bin/*",
+    "dist/*"
   ],
   "scripts": {
     "build": "rm -rf ./dist && npx tsc"
