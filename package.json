@@ -5,6 +5,11 @@
   "type": "module",
   "main": "/dist/index.js",
   "bin": "/dist/index.js",
+  "files": [
+    "bin/",
+    "src/",
+    "dist/"
+  ],
   "scripts": {
     "build": "rm -rf ./dist && npx tsc"
   },

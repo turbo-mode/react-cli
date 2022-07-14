@@ -14,4 +14,4 @@ const exec = async (argv: string[]) => {
   program.parse(argv);
 };
 
-console.log('hello world');
+exec(process.argv);
