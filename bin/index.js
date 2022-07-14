@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-const exec = require('./src/index');
-// const hello = require('./hello');
+// const exec = require('./src/index');
+const hello = require('./test/hello');
 
 const isNotValidNodeVersion = () => {
   const currentNodeVersion = process.versions.node;
@@ -28,5 +28,5 @@ if (isNotValidNodeVersion()) {
   process.exit(1);
 }
 
-exec(process.argv);
-// hello();
+// exec(process.argv);
+hello();
