@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const exec = require('../dist/src/index');
+const exec = require('./src/index');
 // const hello = require('./hello');
 
 const isNotValidNodeVersion = () => {

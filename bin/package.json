@@ -6,11 +6,10 @@
     "main": "bin/index.js",
     "bin": "bin/index.js",
     "files": [
-        "bin",
-        "dist"
+        "bin/"
     ],
     "scripts": {
-        "build": "rm -rf ./dist && npx tsc"
+        "build": "rm -rf ./bin/src && rm -rf ./bin/*.json && npx tsc"
     },
     "keywords": [],
     "author": "rubichandrap",

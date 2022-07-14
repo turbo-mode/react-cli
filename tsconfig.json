@@ -4,7 +4,7 @@
     "module": "commonjs",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "outDir": "./dist",
+    "outDir": "./bin",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "strict": true,
