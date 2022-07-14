@@ -4,9 +4,7 @@
   "private": true,
   "type": "module",
   "main": "/dist/index.js",
-  "bin": {
-    "say-hello": "/dist/index.js"
-  },
+  "bin": "/dist/index.js",
   "scripts": {
     "build": "rm -rf ./dist && npx tsc"
   },
