@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 // import exec from '../dist/src/index.js';
-import hello from './hello.js';
+const hello = require('./hello');
 
 const isNotValidNodeVersion = () => {
   const currentNodeVersion = process.versions.node;
