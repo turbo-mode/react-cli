@@ -1,9 +1,7 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var templates_1 = require("../../templates");
+import { components } from '../../templates';
 var generateComponentTsTemplate = function (_a) {
     var cmd = _a.cmd, componentName = _a.componentName;
-    var template = templates_1.components.componentTsTemplate;
+    var template = components.componentTsTemplate;
     var fileName = "".concat(componentName, ".tsx");
     return {
         componentPath: "".concat(cmd.path, "/").concat(componentName, "/").concat(fileName),
@@ -11,4 +9,4 @@ var generateComponentTsTemplate = function (_a) {
         template: template,
     };
 };
-exports.default = generateComponentTsTemplate;
+export default generateComponentTsTemplate;

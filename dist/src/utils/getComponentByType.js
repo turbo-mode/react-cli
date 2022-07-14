@@ -1,9 +1,4 @@
-"use strict";
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var chalk_1 = __importDefault(require("chalk"));
+import chalk from 'chalk';
 var getComponentByType = function (argv, cliConfigFile) {
     var hasComponentTypeOption = argv.find(function (arg) { return arg.includes('--type'); });
     // Check for component type option.
@@ -12,7 +7,7 @@ var getComponentByType = function (argv, cliConfigFile) {
         var selectedComponentType = cliConfigFile.component[componentType];
         // If the selected component type does not exists in the cliConfigFile under `component` throw an error
         if (!selectedComponentType) {
-            console.error(chalk_1.default.red("\n          ERROR: Please make sure the component type you're trying to use exists in the\n          ".concat(chalk_1.default.bold('generate-react-cli.json'), " config file under the ").concat(chalk_1.default.bold('component'), " object.\n        ")));
+            console.error(chalk.red("\n          ERROR: Please make sure the component type you're trying to use exists in the\n          ".concat(chalk.bold('generate-react-cli.json'), " config file under the ").concat(chalk.bold('component'), " object.\n        ")));
             process.exit(1);
         }
         // Otherwise return it.
@@ -21,4 +16,4 @@ var getComponentByType = function (argv, cliConfigFile) {
     // Otherwise return the default component type.
     return cliConfigFile.component.default;
 };
-exports.default = getComponentByType;
+export default getComponentByType;

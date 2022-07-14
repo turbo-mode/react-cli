@@ -1,4 +1,3 @@
-"use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -35,31 +34,27 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
         if (op[0] & 5) throw op[1]; return { value: op[0] ? op[1] : void 0, done: true };
     }
 };
-var __importDefault = (this && this.__importDefault) || function (mod) {
-    return (mod && mod.__esModule) ? mod : { "default": mod };
-};
-Object.defineProperty(exports, "__esModule", { value: true });
-var chalk_1 = __importDefault(require("chalk"));
-var fs_extra_1 = require("fs-extra");
+import chalk from 'chalk';
+import { accessSync, constants, readFileSync } from 'fs-extra';
 var getCliConfigFile = function () { return __awaiter(void 0, void 0, void 0, function () {
     var currentConfigFile;
     return __generator(this, function (_a) {
         try {
-            (0, fs_extra_1.accessSync)('./package.json', fs_extra_1.constants.R_OK);
+            accessSync('./package.json', constants.R_OK);
             try {
-                (0, fs_extra_1.accessSync)('./react-cli.json', fs_extra_1.constants.R_OK);
-                currentConfigFile = JSON.parse((0, fs_extra_1.readFileSync)('./react-cli.json', { encoding: 'utf-8' }));
+                accessSync('./react-cli.json', constants.R_OK);
+                currentConfigFile = JSON.parse(readFileSync('./react-cli.json', { encoding: 'utf-8' }));
                 return [2 /*return*/, currentConfigFile];
             }
             catch (err) {
-                console.error(chalk_1.default.red.bold('ERROR: Please provide react-cli.json in your root project'));
+                console.error(chalk.red.bold('ERROR: Please provide react-cli.json in your root project'));
             }
         }
         catch (err) {
-            console.error(chalk_1.default.red.bold("ERROR: Please make sure that you're running the generate-react-cli commands from the root level of your React project"));
+            console.error(chalk.red.bold("ERROR: Please make sure that you're running the generate-react-cli commands from the root level of your React project"));
             return [2 /*return*/, process.exit(1)];
         }
         return [2 /*return*/];
     });
 }); };
-exports.default = getCliConfigFile;
+export default getCliConfigFile;
