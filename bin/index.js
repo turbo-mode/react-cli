@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-import exec from '../dist/src/index.js';
+import exec from '../dist/src/index';
 
 const isNotValidNodeVersion = () => {
   const currentNodeVersion = process.versions.node;
