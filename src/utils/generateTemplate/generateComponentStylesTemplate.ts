@@ -1,4 +1,4 @@
-import { components } from 'src/templates';
+import { components } from '../../templates';
 
 interface IGenerateComponentStylesTemplateParams {
   cmd: ICommandArgv;
