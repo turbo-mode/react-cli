@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import { program } from 'commander';
 import { generateComponentCommand } from 'src/commands';
 import pkg from '../package.json';
