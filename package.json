@@ -11,13 +11,14 @@
     "build": "rm -rf ./dist && npx tsc"
   },
   "keywords": [],
-  "author": "",
+  "author": "rubichandrap",
   "license": "ISC",
   "dependencies": {
     "chalk": "^5.0.1",
     "commander": "^9.3.0",
     "fs-extra": "^10.1.0",
-    "inquirer": "^9.0.1"
+    "inquirer": "^9.0.1",
+    "replace": "^1.2.1"
   },
   "devDependencies": {
     "@types/fs-extra": "^9.0.13",
