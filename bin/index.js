@@ -1,5 +1,7 @@
 #!/usr/bin/env node
 
+import exec from '../dist/src';
+
 const isNotValidNodeVersion = () => {
   const currentNodeVersion = process.versions.node;
   const semver = currentNodeVersion.split('.');
@@ -25,4 +27,4 @@ if (isNotValidNodeVersion()) {
   process.exit(1);
 }
 
-require('../dist')(process.argv);
+exec(process.argv);
