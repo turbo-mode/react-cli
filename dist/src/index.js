@@ -58,4 +58,4 @@ var exec = function (argv) { return __awaiter(void 0, void 0, void 0, function (
         }
     });
 }); };
-exec(process.argv);
+exports.default = exec;

@@ -14,4 +14,4 @@ const exec = async (argv: string[]) => {
   program.parse(argv);
 };
 
-exec(process.argv);
+export default exec;
