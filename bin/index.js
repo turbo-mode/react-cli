@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
-import exec from '../dist/src/index.js';
-// import hello from './hello';
+// import exec from '../dist/src/index.js';
+import hello from './hello.js';
 
 const isNotValidNodeVersion = () => {
   const currentNodeVersion = process.versions.node;
@@ -28,4 +28,5 @@ if (isNotValidNodeVersion()) {
   process.exit(1);
 }
 
-exec(process.argv);
+// exec(process.argv);
+hello();
