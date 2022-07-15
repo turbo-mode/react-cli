@@ -36,6 +36,7 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.cli = void 0;
 var commander_1 = require("commander");
 var index_1 = require("./commands/index");
 var index_2 = require("./utils/index");
@@ -52,4 +53,5 @@ var cli = function (argv) { return __awaiter(void 0, void 0, void 0, function ()
         }
     });
 }); };
-exports.default = cli;
+exports.cli = cli;
+exports.default = exports.cli;

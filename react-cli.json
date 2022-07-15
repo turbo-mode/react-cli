@@ -1,0 +1,7 @@
+{
+  "component": {
+    "default": {
+      "path": "src/components"
+    }
+  }
+}

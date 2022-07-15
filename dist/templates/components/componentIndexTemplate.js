@@ -1,4 +1,5 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var componentIndexTemplate = "\n  export { default } from './TemplateName'\n";
-exports.default = componentIndexTemplate;
+exports.componentIndexTemplate = void 0;
+exports.componentIndexTemplate = "\n  export { default } from './TemplateName'\n";
+exports.default = exports.componentIndexTemplate;

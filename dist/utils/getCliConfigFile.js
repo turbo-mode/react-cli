@@ -39,6 +39,7 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.getCliConfigFile = void 0;
 var chalk_1 = __importDefault(require("chalk"));
 var fs_extra_1 = require("fs-extra");
 var getCliConfigFile = function () { return __awaiter(void 0, void 0, void 0, function () {
@@ -62,4 +63,5 @@ var getCliConfigFile = function () { return __awaiter(void 0, void 0, void 0, fu
         return [2 /*return*/];
     });
 }); };
-exports.default = getCliConfigFile;
+exports.getCliConfigFile = getCliConfigFile;
+exports.default = exports.getCliConfigFile;

@@ -1,4 +1,4 @@
-const componentTsTemplate = `
+export const componentTsTemplate = `
   import React, { FC } from 'react';
   import styles from './styles';
 

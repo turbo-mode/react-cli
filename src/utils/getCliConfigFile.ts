@@ -1,7 +1,7 @@
 import chalk from 'chalk';
 import { accessSync, constants, readFileSync } from 'fs-extra';
 
-const getCliConfigFile = async () => {
+export const getCliConfigFile = async () => {
   try {
     accessSync('./package.json', constants.R_OK);
     try {

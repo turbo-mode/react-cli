@@ -1,6 +1,9 @@
 import chalk from 'chalk';
 
-const getComponentByType = (argv: string[], cliConfigFile: ICliConfigFile) => {
+export const getComponentByType = (
+  argv: string[],
+  cliConfigFile: ICliConfigFile
+) => {
   const hasComponentTypeOption = argv.find(arg => arg.includes('--type'));
 
   // Check for component type option.

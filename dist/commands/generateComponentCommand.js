@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.generateComponentCommand = void 0;
 var index_1 = require("../utils/index");
-var generateComponent = function (argv, cliConfigFile, program) {
+var generateComponentCommand = function (argv, cliConfigFile, program) {
     var selectedComponentType = (0, index_1.getComponentByType)(argv, cliConfigFile);
     var componentCommand = program
         .command('component [names...]')
@@ -15,4 +16,5 @@ var generateComponent = function (argv, cliConfigFile, program) {
         });
     });
 };
-exports.default = generateComponent;
+exports.generateComponentCommand = generateComponentCommand;
+exports.default = exports.generateComponentCommand;

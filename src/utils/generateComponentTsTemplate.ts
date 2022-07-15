@@ -15,7 +15,7 @@ type GenerateComponentTsTemplate = (
   params: IGenerateComponentTsTemplateParams
 ) => IGenerateComponentTsTemplateReturns;
 
-const generateComponentTsTemplate: GenerateComponentTsTemplate = ({
+export const generateComponentTsTemplate: GenerateComponentTsTemplate = ({
   cmd,
   componentName,
 }) => {

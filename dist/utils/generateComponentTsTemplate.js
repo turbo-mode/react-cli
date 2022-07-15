@@ -1,5 +1,6 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.generateComponentTsTemplate = void 0;
 var index_1 = require("../templates/components/index");
 var generateComponentTsTemplate = function (_a) {
     var cmd = _a.cmd, componentName = _a.componentName;
@@ -11,4 +12,5 @@ var generateComponentTsTemplate = function (_a) {
         template: template,
     };
 };
-exports.default = generateComponentTsTemplate;
+exports.generateComponentTsTemplate = generateComponentTsTemplate;
+exports.default = exports.generateComponentTsTemplate;

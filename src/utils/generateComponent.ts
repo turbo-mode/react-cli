@@ -13,7 +13,7 @@ const componentTemplateGeneratorMap = {
   styles: generateComponentStylesTemplate,
 };
 
-const generateComponent = (componentName: string, cmd: ICommandArgv) => {
+export const generateComponent = (componentName: string, cmd: ICommandArgv) => {
   const componentFileTypes = ['index', 'component', 'styles'] as const;
 
   componentFileTypes.forEach(

@@ -4,7 +4,7 @@ import {
   getComponentByType,
 } from '../utils/index';
 
-const generateComponent = (
+export const generateComponentCommand = (
   argv: string[],
   cliConfigFile: ICliConfigFile,
   program: Command
@@ -35,4 +35,4 @@ const generateComponent = (
   });
 };
 
-export default generateComponent;
+export default generateComponentCommand;

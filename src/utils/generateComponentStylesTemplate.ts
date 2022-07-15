@@ -15,18 +15,16 @@ type GenerateComponentStylesTemplate = (
   params: IGenerateComponentStylesTemplateParams
 ) => IGenerateComponentStylesTemplateReturns;
 
-const generateComponentStylesTemplate: GenerateComponentStylesTemplate = ({
-  cmd,
-  componentName,
-}) => {
-  const template = componentStylesTemplate;
-  const fileName = 'styles.ts';
+export const generateComponentStylesTemplate: GenerateComponentStylesTemplate =
+  ({ cmd, componentName }) => {
+    const template = componentStylesTemplate;
+    const fileName = 'styles.ts';
 
-  return {
-    componentPath: `${cmd.path}/${componentName}/${fileName}`,
-    fileName,
-    template,
+    return {
+      componentPath: `${cmd.path}/${componentName}/${fileName}`,
+      fileName,
+      template,
+    };
   };
-};
 
 export default generateComponentStylesTemplate;

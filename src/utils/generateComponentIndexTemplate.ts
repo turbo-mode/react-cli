@@ -15,7 +15,7 @@ type GenerateComponentIndexTemplate = (
   params: IGenerateComponentIndexTemplateParams
 ) => IGenerateComponentIndexTemplateReturns;
 
-const generateComponentIndexTemplate: GenerateComponentIndexTemplate = ({
+export const generateComponentIndexTemplate: GenerateComponentIndexTemplate = ({
   cmd,
   componentName,
 }) => {
@@ -29,4 +29,4 @@ const generateComponentIndexTemplate: GenerateComponentIndexTemplate = ({
   };
 };
 
-export default generateComponentIndexTemplate;
+export default generateComponentIndexTemplate

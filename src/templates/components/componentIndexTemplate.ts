@@ -1,4 +1,4 @@
-const componentIndexTemplate = `
+export const componentIndexTemplate = `
   export { default } from './TemplateName'
 `;
 
