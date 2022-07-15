@@ -1,6 +1,6 @@
 #!/usr/bin/env node
 
-const cli = require('../dist/cli');
+const cli = require('../dist/cli').default;
 
 cli();
 
