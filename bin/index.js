@@ -2,7 +2,7 @@
 
 const cli = require('../dist/cli').default;
 
-cli();
+cli(process.argv);
 
 // const hello = require('../dist/hello');
 
