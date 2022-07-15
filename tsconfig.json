@@ -3,7 +3,6 @@
     "target": "es5",
     "module": "esnext",
     "moduleResolution": "node",
-    "resolveJsonModule": true,
     "outDir": "./dist",
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
