@@ -3,7 +3,7 @@ import { generateComponentCommand } from 'src/commands';
 import pkg from '../package.json';
 import { getCliConfigFile } from './utils';
 
-const exec = async (argv: string[]) => {
+const cli = async (argv: string[]) => {
   const cliConfigFile = await getCliConfigFile();
 
   generateComponentCommand(argv, cliConfigFile, program);
@@ -12,4 +12,4 @@ const exec = async (argv: string[]) => {
   program.parse(argv);
 };
 
-export default exec;
+export default cli;
