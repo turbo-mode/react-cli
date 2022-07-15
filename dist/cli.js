@@ -1,4 +1,3 @@
-'use strict';
 // import { program } from 'commander';
 // import { generateComponentCommand } from './commands/index';
 // import { getCliConfigFile } from './utils/index';
