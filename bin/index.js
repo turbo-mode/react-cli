@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-// import cli from '../dist/src/cli';
+const cli = require('../dist/cli');
 
-// cli(process.argv);
+cli(process.argv);
 
-const hello = require('../dist/hello');
+// const hello = require('../dist/hello');
 
-hello();
+// hello();
