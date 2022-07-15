@@ -18,9 +18,9 @@ export const generateComponent = (componentName: string, cmd: ICommandArgv) => {
 
   componentFileTypes.forEach(
     (componentFileType: typeof componentFileTypes[number]) => {
-      console.log(componentFileType);
-
       const generateTemplate = componentTemplateGeneratorMap[componentFileType];
+
+      console.log(cmd, 'cmd');
 
       const { componentPath, fileName, template } = generateTemplate({
         cmd,

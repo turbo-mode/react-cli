@@ -16,8 +16,8 @@ var componentTemplateGeneratorMap = {
 var generateComponent = function (componentName, cmd) {
     var componentFileTypes = ['index', 'component', 'styles'];
     componentFileTypes.forEach(function (componentFileType) {
-        console.log(componentFileType);
         var generateTemplate = componentTemplateGeneratorMap[componentFileType];
+        console.log(cmd, 'cmd');
         var _a = generateTemplate({
             cmd: cmd,
             componentName: componentName,
