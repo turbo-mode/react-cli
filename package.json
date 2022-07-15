@@ -16,7 +16,7 @@
   "author": "rubichandrap",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.0.1",
+    "chalk": "^4.1.2",
     "commander": "^9.3.0",
     "fs-extra": "^10.1.0",
     "inquirer": "^9.0.1",
