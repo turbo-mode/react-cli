@@ -10,7 +10,7 @@
     "dist/"
   ],
   "scripts": {
-    "build": "rm -rf ./bin/src && rm -rf ./bin/*.json && npx tsc"
+    "build": "rm -rf ./dist && npx tsc"
   },
   "keywords": [],
   "author": "rubichandrap",
