@@ -1,4 +1,7 @@
 "use strict";
+// import { program } from 'commander';
+// import { generateComponentCommand } from './commands/index';
+// import { getCliConfigFile } from './utils/index';
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
     function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
@@ -36,20 +39,13 @@ var __generator = (this && this.__generator) || function (thisArg, body) {
     }
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-var commander_1 = require("commander");
-var index_1 = require("./commands/index");
-var index_2 = require("./utils/index");
 var cli = function (argv) { return __awaiter(void 0, void 0, void 0, function () {
-    var cliConfigFile;
     return __generator(this, function (_a) {
-        switch (_a.label) {
-            case 0: return [4 /*yield*/, (0, index_2.getCliConfigFile)()];
-            case 1:
-                cliConfigFile = _a.sent();
-                (0, index_1.generateComponentCommand)(argv, cliConfigFile, commander_1.program);
-                commander_1.program.parse(argv);
-                return [2 /*return*/];
-        }
+        // const cliConfigFile = await getCliConfigFile();
+        // generateComponentCommand(argv, cliConfigFile, program);
+        // program.parse(argv);
+        console.log(argv);
+        return [2 /*return*/];
     });
 }); };
 exports.default = cli;
