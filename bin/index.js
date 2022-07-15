@@ -4,6 +4,6 @@
 
 // cli(process.argv);
 
-import hello from './hello';
+const hello = require('./hello');
 
 hello();
