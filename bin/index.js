@@ -1,9 +1,9 @@
 #!/usr/bin/env node
 
-// const cli = require('../dist/cli');
+const cli = require('../dist/cli');
 
-// cli();
+cli();
 
-const hello = require('../dist/hello');
+// const hello = require('../dist/hello');
 
-hello();
+// hello();
