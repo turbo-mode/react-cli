@@ -49,7 +49,8 @@
 //     });
 // }); };
 
-const cli = async () => {
-  console.log('hello');
-};
+async function cli() {
+  console.log('hi cli');
+}
+
 exports.default = cli;
