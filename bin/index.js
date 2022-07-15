@@ -1,3 +1,5 @@
 #!/usr/bin/env node
 
-require('../dist/cli')(process.argv);
+const cli = require('../dist/cli');
+
+cli();
