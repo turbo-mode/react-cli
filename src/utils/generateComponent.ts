@@ -5,7 +5,7 @@ import {
   generateComponentIndexTemplate,
   generateComponentStylesTemplate,
   generateComponentTsTemplate,
-} from './generateTemplate';
+} from './index';
 
 const componentTemplateGeneratorMap = {
   index: generateComponentIndexTemplate,

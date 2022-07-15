@@ -1,7 +1,7 @@
 import { program } from 'commander';
-import { generateComponentCommand } from 'src/commands';
 import pkg from '../package.json';
-import { getCliConfigFile } from './utils';
+import { generateComponentCommand } from './commands/index';
+import { getCliConfigFile } from './utils/index';
 
 const cli = async (argv: string[]) => {
   const cliConfigFile = await getCliConfigFile();

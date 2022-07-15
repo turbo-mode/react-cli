@@ -1,5 +1,8 @@
 import type { Command } from 'commander';
-import { generateComponent as generate, getComponentByType } from '../utils';
+import {
+  generateComponent as generate,
+  getComponentByType,
+} from '../utils/index';
 
 const generateComponent = (
   argv: string[],

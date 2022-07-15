@@ -1,4 +1,4 @@
-import { components } from '../../templates';
+import { componentStylesTemplate } from '../templates/components/index';
 
 interface IGenerateComponentStylesTemplateParams {
   cmd: ICommandArgv;
@@ -19,7 +19,7 @@ const generateComponentStylesTemplate: GenerateComponentStylesTemplate = ({
   cmd,
   componentName,
 }) => {
-  const template = components.componentStylesTemplate;
+  const template = componentStylesTemplate;
   const fileName = 'styles.ts';
 
   return {

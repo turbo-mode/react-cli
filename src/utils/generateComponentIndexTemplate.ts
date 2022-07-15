@@ -1,4 +1,4 @@
-import { components } from '../../templates';
+import { componentIndexTemplate } from '../templates/components/index';
 
 interface IGenerateComponentIndexTemplateParams {
   cmd: ICommandArgv;
@@ -19,7 +19,7 @@ const generateComponentIndexTemplate: GenerateComponentIndexTemplate = ({
   cmd,
   componentName,
 }) => {
-  const template = components.componentIndexTemplate;
+  const template = componentIndexTemplate;
   const fileName = 'index.ts';
 
   return {
