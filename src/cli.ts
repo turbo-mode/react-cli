@@ -1,8 +1,8 @@
 import { program } from 'commander';
-import { generateComponentCommand } from './commands/index';
-import { getCliConfigFile } from './utils/index';
+import generateComponentCommand from './commands/generateComponentCommand';
+import getCliConfigFile from './utils/getCliConfigFile';
 
-export const cli = async (argv: string[]) => {
+const cli = async (argv: string[]) => {
   const cliConfigFile = await getCliConfigFile();
 
   generateComponentCommand(argv, cliConfigFile, program);

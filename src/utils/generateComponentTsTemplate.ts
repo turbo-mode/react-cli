@@ -1,4 +1,4 @@
-import { componentTsTemplate } from '../templates/components/index';
+import componentTsTemplate from '../templates/components/componentTsTemplate';
 
 interface IGenerateComponentTsTemplateParams {
   cmd: ICommandArgv;
@@ -15,15 +15,23 @@ type GenerateComponentTsTemplate = (
   params: IGenerateComponentTsTemplateParams
 ) => IGenerateComponentTsTemplateReturns;
 
-export const generateComponentTsTemplate: GenerateComponentTsTemplate = ({
+const generateComponentTsTemplate: GenerateComponentTsTemplate = ({
   cmd,
   componentName,
 }) => {
   const template = componentTsTemplate;
   const fileName = `${componentName}.tsx`;
 
+  let componentPath: string = `${cmd.path}/${componentName}/${fileName}`;
+
+  if (cmd.type === 'page') {
+    componentPath = `${
+      cmd.path
+    }/${componentName.toLowerCase()}/_components/${componentName}/${fileName}`;
+  }
+
   return {
-    componentPath: `${cmd.path}/${componentName}/${fileName}`,
+    componentPath,
     fileName,
     template,
   };

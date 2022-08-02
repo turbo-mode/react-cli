@@ -1,4 +1,4 @@
-export const componentStylesTemplate = `
+const componentStylesTemplate = `
   import css from 'styled-jsx/css';
 
   const styles = css${``}

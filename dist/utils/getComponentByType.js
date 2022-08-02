@@ -3,7 +3,6 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
     return (mod && mod.__esModule) ? mod : { "default": mod };
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.getComponentByType = void 0;
 var chalk_1 = __importDefault(require("chalk"));
 var getComponentByType = function (argv, cliConfigFile) {
     var hasComponentTypeOption = argv.find(function (arg) { return arg.includes('--type'); });
@@ -22,5 +21,4 @@ var getComponentByType = function (argv, cliConfigFile) {
     // Otherwise return the default component type.
     return cliConfigFile.component.default;
 };
-exports.getComponentByType = getComponentByType;
-exports.default = exports.getComponentByType;
+exports.default = getComponentByType;
