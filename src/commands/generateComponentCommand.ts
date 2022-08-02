@@ -1,10 +1,8 @@
 import type { Command } from 'commander';
-import {
-  generateComponent as generate,
-  getComponentByType,
-} from '../utils/index';
+import generate from '../utils/generateComponent';
+import getComponentByType from '../utils/getComponentByType';
 
-const generateComponent = (
+const generateComponentCommand = (
   argv: string[],
   cliConfigFile: ICliConfigFile,
   program: Command
@@ -35,4 +33,4 @@ const generateComponent = (
   });
 };
 
-export default generateComponent;
+export default generateComponentCommand;

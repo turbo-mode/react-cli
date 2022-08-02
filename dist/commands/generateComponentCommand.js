@@ -1,6 +1,12 @@
-import { generateComponent as generate, getComponentByType, } from '../utils/index';
-var generateComponent = function (argv, cliConfigFile, program) {
-    var selectedComponentType = getComponentByType(argv, cliConfigFile);
+"use strict";
+var __importDefault = (this && this.__importDefault) || function (mod) {
+    return (mod && mod.__esModule) ? mod : { "default": mod };
+};
+Object.defineProperty(exports, "__esModule", { value: true });
+var generateComponent_1 = __importDefault(require("../utils/generateComponent"));
+var getComponentByType_1 = __importDefault(require("../utils/getComponentByType"));
+var generateComponentCommand = function (argv, cliConfigFile, program) {
+    var selectedComponentType = (0, getComponentByType_1.default)(argv, cliConfigFile);
     var componentCommand = program
         .command('component [names...]')
         .alias('c')
@@ -9,8 +15,8 @@ var generateComponent = function (argv, cliConfigFile, program) {
         .option('--type <type>', 'You can pass a component type that you have configured in your GRC config file.', 'default');
     componentCommand.action(function (componentNames, cmd) {
         return componentNames.forEach(function (componentName) {
-            return generate(componentName, cmd);
+            return (0, generateComponent_1.default)(componentName, cmd);
         });
     });
 };
-export default generateComponent;
+exports.default = generateComponentCommand;

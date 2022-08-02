@@ -2,12 +2,10 @@
   "name": "react-cli",
   "version": "0.1.0",
   "private": true,
-  "type": "module",
-  "main": "bin/index.js",
-  "bin": "bin/index.js",
+  "main": "dist/bin/index.js",
+  "bin": "dist/bin/index.js",
   "files": [
-    "bin/",
-    "dist/"
+    "dist"
   ],
   "scripts": {
     "build": "rm -rf ./dist && npx tsc"
@@ -16,7 +14,7 @@
   "author": "rubichandrap",
   "license": "ISC",
   "dependencies": {
-    "chalk": "^5.0.1",
+    "chalk": "^4.1.2",
     "commander": "^9.3.0",
     "fs-extra": "^10.1.0",
     "inquirer": "^9.0.1",
