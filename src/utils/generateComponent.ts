@@ -112,8 +112,10 @@ const generatePageComponent = (componentName: string, cmd: ICommandArgv) => {
 const generateComponent = (componentName: string, cmd: ICommandArgv) => {
   switch (cmd.type) {
     case 'page':
+      console.log(chalk.blue('generating page component'));
       return generatePageComponent(componentName, cmd);
     default:
+      console.log(chalk.blue('generating default component'));
       return generateDefaultComponent(componentName, cmd);
   }
 };

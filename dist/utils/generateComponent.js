@@ -87,8 +87,10 @@ var generatePageComponent = function (componentName, cmd) {
 var generateComponent = function (componentName, cmd) {
     switch (cmd.type) {
         case 'page':
+            console.log(chalk_1.default.blue('generating page component'));
             return generatePageComponent(componentName, cmd);
         default:
+            console.log(chalk_1.default.blue('generating default component'));
             return generateDefaultComponent(componentName, cmd);
     }
 };
