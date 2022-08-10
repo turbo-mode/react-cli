@@ -4,7 +4,9 @@ Typescript and customized version to my fully need for my project with nextjs fr
 
 ## available options
 
-you can also pass `--type="<type>"` as additional arguments. all available types are;
+you can pass `--path` to specify outdir of components that will be generated.
+
+you can also pass `--type` as additional arguments. all available types are;
 
 - `default`
   - will generate the files under `src/components/<ComponentName>`, with necessary files such; 
@@ -12,7 +14,7 @@ you can also pass `--type="<type>"` as additional arguments. all available types
     - `styles.ts`
     - `<ComponentName>.tsx`
 - `page`
-  - will generate the files under `src/pages/<ComponentName>`, with files `index.page.tsx` and `_components` directory that contains; 
+  - will generate the files under `src/pages/<component-name>`, with files `index.page.tsx` and `_components` directory that contains; 
     - `index.ts` as component aggregator
     - `styles.ts`
     - `<ComponentName>.tsx`
