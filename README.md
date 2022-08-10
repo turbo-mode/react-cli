@@ -5,7 +5,7 @@ Typescript and customized version to my fully need for my project with nextjs fr
 ## how to run
 
 I don't think it's necessary to publish this package to npm registry. So you can execute the program with `npx` that target this remote repository
-`npx github:rubichandrap/react-cli component <ComponentName>`
+`npx github:turbo-mode/react-cli component <ComponentName>`
 
 ## available options
 
