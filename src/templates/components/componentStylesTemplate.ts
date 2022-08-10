@@ -1,9 +1,6 @@
-const componentStylesTemplate = `
-  import css from 'styled-jsx/css';
+const componentStylesTemplate = `import css from 'styled-jsx/css';
+const styles = css${``}
 
-  const styles = css${``}
-
-  export default styles
-`;
+export default styles`;
 
 export default componentStylesTemplate;

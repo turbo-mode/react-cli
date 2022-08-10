@@ -1,4 +1,4 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
-var componentAggregatorTemplate = "\n  export { default as TemplateName } from './TemplateName'\n";
+var componentAggregatorTemplate = "export { default as TemplateName } from './TemplateName'";
 exports.default = componentAggregatorTemplate;
