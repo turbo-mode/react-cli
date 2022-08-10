@@ -1,3 +1,4 @@
+import { kebabCase } from 'lodash';
 import componentAggregatorTemplate from '../templates/components/componentAggregatorTemplate';
 
 interface IGenerateComponentAggregatorTemplateParams {
@@ -21,9 +22,9 @@ const generateComponentAggregatorTemplate: GenerateComponentAggregatorTemplate =
     const fileName = 'index.ts';
 
     return {
-      componentPath: `${
-        cmd.path
-      }/${componentName.toLowerCase()}/_components/${fileName}`,
+      componentPath: `${cmd.path}/${kebabCase(
+        componentName
+      )}/_components/${fileName}`,
       fileName,
       template,
     };

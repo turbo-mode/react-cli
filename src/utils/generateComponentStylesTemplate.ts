@@ -1,3 +1,4 @@
+import { kebabCase } from 'lodash';
 import componentStylesTemplate from '../templates/components/componentStylesTemplate';
 
 interface IGenerateComponentStylesTemplateParams {
@@ -25,9 +26,9 @@ const generateComponentStylesTemplate: GenerateComponentStylesTemplate = ({
   let componentPath: string = `${cmd.path}/${componentName}/${fileName}`;
 
   if (cmd.type === 'page') {
-    componentPath = `${
-      cmd.path
-    }/${componentName.toLowerCase()}/_components/${componentName}/${fileName}`;
+    componentPath = `${cmd.path}/${kebabCase(
+      componentName
+    )}/_components/${componentName}/${fileName}`;
   }
 
   return {
