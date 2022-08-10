@@ -19,7 +19,7 @@ you can also pass `--type="<type>"` as additional arguments. all available types
     - `styles.ts`
     - `<ComponentName>.tsx`
 - `pages`
-  - will generate the files under `src/pages/<ComponentName`, with files `index.page.tsx` and `_components` directory that contains; 
+  - will generate the files under `src/pages/<ComponentName>`, with files `index.page.tsx` and `_components` directory that contains; 
     - `index.ts` as component aggregator
     - `styles.ts`
     - `<ComponentName>.tsx`
