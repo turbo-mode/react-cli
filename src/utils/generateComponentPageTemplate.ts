@@ -1,3 +1,4 @@
+import { kebabCase } from 'lodash';
 import componentPageTemplate from '../templates/components/componentPageTemplate';
 
 interface IGenerateComponentPageTemplateParams {
@@ -23,7 +24,7 @@ const generateComponentPageTemplate: GenerateComponentPageTemplate = ({
   const fileName = `index.page.tsx`;
 
   return {
-    componentPath: `${cmd.path}/${componentName.toLowerCase()}/${fileName}`,
+    componentPath: `${cmd.path}/${kebabCase(componentName)}/${fileName}`,
     fileName,
     template,
   };
