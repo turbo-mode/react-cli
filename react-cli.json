@@ -1,0 +1,13 @@
+{
+  "component": {
+    "default": {
+      "path": "src/components"
+    },
+    "page": {
+      "path": "src/pages"
+    },
+    "service": {
+      "path": "src/services"
+    }
+  }
+}

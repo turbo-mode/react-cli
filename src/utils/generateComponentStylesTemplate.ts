@@ -1,4 +1,4 @@
-import { componentStylesTemplate } from '../templates/components/index';
+import componentStylesTemplate from '../templates/components/componentStylesTemplate';
 
 interface IGenerateComponentStylesTemplateParams {
   cmd: ICommandArgv;
@@ -22,8 +22,16 @@ const generateComponentStylesTemplate: GenerateComponentStylesTemplate = ({
   const template = componentStylesTemplate;
   const fileName = 'styles.ts';
 
+  let componentPath: string = `${cmd.path}/${componentName}/${fileName}`;
+
+  if (cmd.type === 'page') {
+    componentPath = `${
+      cmd.path
+    }/${componentName.toLowerCase()}/_components/${componentName}/${fileName}`;
+  }
+
   return {
-    componentPath: `${cmd.path}/${componentName}/${fileName}`,
+    componentPath,
     fileName,
     template,
   };

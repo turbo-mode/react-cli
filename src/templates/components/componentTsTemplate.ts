@@ -1,6 +1,7 @@
 const componentTsTemplate = `
-  import React, { FC } from 'react';
+  import React from 'react';
   import styles from './styles';
+  import type { FC } from 'react';
 
   type TemplateNameProps = {
     [key: string]: unknown;
